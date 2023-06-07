@@ -25,9 +25,9 @@ export default function Nav() {
               <a href="#about">About</a>
             </li>
             <li className="nav--item">
-              <a to="/cart" className="nav--basket">
-                <span>Cart</span>
-                <BsBag className="nav--icon" style={{ fontSize: "1.75rem" }} />
+              <a href="#" className="nav--basket">
+                Cart
+              <BsBag className="nav--icon" style={{ fontSize: "1.75rem" }} />
               </a>
             </li>
           </ul>

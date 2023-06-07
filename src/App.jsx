@@ -1,4 +1,3 @@
-// import { useState } from 'react'
 import './index.css'
 import Navbar from './components/nav/Nav'
 import Hero from './components/hero/Hero'

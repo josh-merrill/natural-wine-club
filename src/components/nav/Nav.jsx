@@ -1,16 +1,44 @@
-import './nav.css'
-import { BsBag } from 'react-icons/bs'
+import { useState } from "react";
+
+import "./nav.css";
+import logo from "../../assets/nwc-logo.png";
+import { Slant as Hamburger } from "hamburger-react";
+import { BsBag } from "react-icons/bs";
 
 export default function Nav() {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  function toggleMobileMenu() {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  }
+
   return (
     <section className="container">
-      <div className="nav--container">
-          <h2>Nav</h2>
-          <a href="#">Menu</a>
-          <a href="#">About</a>
-          <a href="#">Basket</a>
-          <BsBag className="nav--icon" style={{ fontSize: '1.75rem' }} />
-      </div>
+      <nav className="nav--container">
+        <img className="nav--logo" src={logo} />
+        <div className={`nav--menu ${isMobileMenuOpen ? "active" : ""}`}>
+          <ul className="nav--list">
+            <li className="nav--item">
+              <a href="#menu">Menu</a>
+            </li>
+            <li className="nav--item">
+              <a href="#about">About</a>
+            </li>
+            <li className="nav--item">
+              <a to="/cart" className="nav--basket">
+                <span>Cart</span>
+                <BsBag className="nav--icon" style={{ fontSize: "1.75rem" }} />
+              </a>
+            </li>
+          </ul>
+        </div>
+        <button className="nav--toggle" onClick={toggleMobileMenu}>
+          <Hamburger
+            duration={0.2}
+            color="var(--color-blue)"
+          />
+        </button>
+      </nav>
     </section>
-  )
+  );
 }

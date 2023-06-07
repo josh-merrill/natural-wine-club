@@ -69,18 +69,19 @@ h3 {
 /* ========== GENERAL STYLES ========= */
 
 .container {
-  width: var(--container-width-lg);
+  width: var(--container-width-sm);
   margin: 0 auto;
+  padding-top: 4em;
 }
 
 a {
   font-weight: 500;
-  color: var(--color-blue);
+  color: var(--color-blue-secondary);
   text-decoration: inherit;
 }
 
 a:hover {
-  color: var(--color-blue-secondary);
+  color: var(--color-blue);
 }
 
 /* ========== BUTTON STYLES ========= */
@@ -126,10 +127,21 @@ a:hover {
   background-color: var(--color-blue-secondary);
   cursor: pointer;
 }
-/* ========== MEDIA QUERIES (SMALL DEVICES) ========= */
 
-@media screen and (max-width: 600) {
+/* ========== MEDIA QUERIES (MEDIUM DEVICES) ========= */
+
+@media screen and (min-width: 768px) {
   .container {
-    width: var(--container-width-sm);
+    width: var(--container-width-md);
+    margin: 0 auto;
+  }
+}
+
+/* ========== MEDIA QUERIES (LARGE DEVICES) ========= */
+
+@media screen and (min-width: 1024px) {
+  .container {
+    width: var(--container-width-lg);
+    margin: 0 auto;
   }
 }

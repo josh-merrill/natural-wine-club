@@ -1,0 +1,82 @@
+{
+  "menu": [
+    {
+      "id": 1,
+      "name": "Châteauneuf-du-Pape",
+      "color": "Red",
+      "region": "Rhone Valley, France",
+      "year": 2017,
+      "winery": "tbd",
+      "description": "A full-bodied red wine with notes of dark fruits and spices.",
+      "img": "Tbd",
+      "price": "$45",
+      "grape": "Grapes: Grenache, Syrah, Mourvèdre",
+      "bottle_size": "75cl"
+    },
+    {
+      "id": 2,
+      "name": "Barolo",
+      "color": "Red",
+      "region": "Piedmont, Italy",
+      "year": 2015,
+      "winery": "tbd",
+      "description": "A complex and robust red wine with flavors of cherry, truffle, and tar.",
+      "img": "Tbd",
+      "price": "$55",
+      "grape": "Grapes: Nebbiolo",
+      "bottle_size": "75cl"
+    },
+    {
+      "id": 3,
+      "name": "Riesling",
+      "color": "White",
+      "region": "Mosel, Germany",
+      "year": 2018,
+      "winery": "tbd",
+      "description": "An aromatic white wine with a crisp acidity and floral notes.",
+      "img": "Tbd",
+      "price": "$35",
+      "grape": "Grapes: Riesling",
+      "bottle_size": "75cl"
+    },
+    {
+      "id": 4,
+      "name": "Pinot Noir",
+      "color": "Red",
+      "region": "Willamette Valley, Oregon",
+      "year": 2019,
+      "winery": "tbd",
+      "description": "A delicate red wine with flavors of red berries and earthy undertones.",
+      "img": "Tbd",
+      "price": "$40",
+      "grape": "Grapes: Pinot Noir",
+      "bottle_size": "75cl"
+    },
+    {
+      "id": 5,
+      "name": "Chardonnay",
+      "color": "White",
+      "region": "Sonoma, California",
+      "year": 2020,
+      "winery": "tbd",
+      "description": "A rich and buttery white wine with hints of tropical fruits and vanilla.",
+      "img": "Tbd",
+      "price": "$30",
+      "grape": "Grapes: Chardonnay",
+      "bottle_size": "75cl"
+    },
+    {
+      "id": 6,
+      "name": "Zinfandel",
+      "color": "Red",
+      "region": "Napa Valley, California",
+      "year": 2016,
+      "winery": "tbd",
+      "description": "A bold and jammy red wine with blackberry and pepper notes.",
+      "img": "Tbd",
+      "price": "$50",
+      "grape": "Grapes: Zinfandel",
+      "bottle_size": "75cl"
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-import "./wine.css";
+import "./menu.css";
 
 export default function Wine() {
   return (

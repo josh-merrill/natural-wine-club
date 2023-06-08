@@ -9,14 +9,14 @@ import Cart from './components/cart/Cart'
 function App() {
 
   return (
-    <>
+    <div>
       <Navbar />
       <Hero />
       <Menu />
       <About />
       <Cart />
       <Footer />
-    </>
+    </div>
   )
 }
 

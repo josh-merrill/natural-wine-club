@@ -23,6 +23,11 @@
   --transition: all 400ms ease;
   --transform: scale(1.02);
 
+  --spacer-sm: 2em;
+  --spacer-md: 4em;
+  --spacer-lg: 6em;
+  --spacer-xl: 8em;
+  
   --container-width-lg: 75%;
   --container-width-md: 86%;
   --container-width-sm: 90%;
@@ -50,8 +55,8 @@ h1, h2, h3, h4 {
 
 h1 {
   font-weight: 400;
-  font-size: 6rem;
-  line-height: 116px;
+  font-size: 6.5rem;
+  line-height: 1.25;
 }
 
 h2 {
@@ -76,12 +81,15 @@ h3 {
 
 a {
   font-weight: 500;
-  color: var(--color-blue-secondary);
+  color: var(--color-blue);
+  opacity: 0.7;
   text-decoration: inherit;
 }
 
 a:hover {
-  color: var(--color-blue);
+  /* color: var(--color-blue); */
+  opacity: 1;
+  transition-duration: .3s;
 }
 
 /* ========== BUTTON STYLES ========= */
@@ -144,4 +152,10 @@ a:hover {
     width: var(--container-width-lg);
     margin: 0 auto;
   }
+}
+
+
+.line--wavy {
+  width: 100%;
+  margin: 10em auto;
 }

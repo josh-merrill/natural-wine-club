@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 import "./nav.css";
-import logo from "../../assets/nwc-logo.png";
+import logo from "../../assets/nwc-logo.svg";
 import { Slant as Hamburger } from "hamburger-react";
 import { BsBag } from "react-icons/bs";
 

@@ -1,0 +1,50 @@
+.hero--container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: var(--spacer-md) auto;
+  }
+
+  .hero--title {
+    font-size: 4.25rem;
+    text-align: center;
+  }
+
+  .hero--svg-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: var(--spacer-md);
+  }
+
+  .hero--svg {
+    max-width: 75%;
+  }
+
+  /* ========== MEDIA QUERIES (MEDIUM DEVICES) ========= */
+
+@media screen and (min-width: 768px) {
+
+}
+
+/* ========== MEDIA QUERIES (LARGE DEVICES) ========= */
+
+@media screen and (min-width: 1024px) {
+
+  .hero--container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .hero--title {
+    font-size: 6.5rem;
+    max-width: 500px;
+    text-align: left;
+  }
+
+  .hero--svg-wrapper {
+    justify-content: right;
+    width: 100%;
+    margin-top: 0;
+  }
+
+}

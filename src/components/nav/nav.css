@@ -6,7 +6,6 @@
 }
 
 .nav--container a {
-  font-weight: 400;
   font-size: 1.75rem;
   line-height: 42px;
 }
@@ -22,7 +21,7 @@
 
 .nav--menu.active {
   position: absolute;
-  margin-top: 4em;
+  margin-top: var(--spacer-md);
   top: 100%;
   display: flex;
   flex-direction: column;
@@ -35,13 +34,41 @@
 }
 
 .nav--list {
-  gap: 5em;
+  gap: var(--spacer-lg);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: auto;
   list-style: none;
+}
+
+.nav--item:hover:after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-bottom: 3px solid var(--color-blue);
+  -webkit-animation-name: grow_border;
+  -webkit-animation-duration: 200ms;
+  -webkit-animation-timing-function: ease-in-out;
+  -moz-animation-name: grow_border;
+  -moz-animation-duration: 200ms;
+  -moz-animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  border-radius: 10rem;
+}
+
+
+@keyframes grow_border {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 20px;
+  }
+  100% {
+    width: 40px;
+  }
 }
 
 .nav--basket {
@@ -56,7 +83,8 @@
   border: none;
 }
 
-/* Media query for mobile menu */
+/* ========== MEDIA QUERIES (MEDIUM DEVICES) ========= */
+
 @media screen and (min-width: 768px) {
 
   .nav--menu {

@@ -51,7 +51,7 @@
 
 .menu--item-img:hover {
   transform: rotate(42deg);
-  transition: transform 0.4s ease-in-out;
+  transition: var(--transition);
 }
 
 .menu--item-details {

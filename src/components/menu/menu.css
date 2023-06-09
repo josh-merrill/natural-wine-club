@@ -1,0 +1,97 @@
+.menu--container {
+
+}
+
+.menu--wrapper {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-gap: var(--spacer-sm);
+  margin: var(--spacer-md) auto;
+}
+
+.menu--item {
+  border: 3px solid var(--color-blue);
+  border-radius: 20px;
+}
+
+.menu--item-top {
+  position: relative;
+  padding: 0.5em 3.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu--item-badge {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  padding: 15px 40px;
+  border: 1px solid blue;
+  border-radius: 50%;
+}
+
+.menu--item-title-wrapper {
+  padding: 2.25em 3.5em 0.75em;
+}
+
+.menu--item-title {
+  font-size: 2.5rem;
+}
+
+.menu--item-bottom {
+  padding: 2.25em 3.5em;
+}
+
+.menu--item-img {
+  width: 80px;
+  transform: rotate(45deg);
+}
+
+.menu--item-img:hover {
+  transform: rotate(42deg);
+  transition: transform 0.4s ease-in-out;
+}
+
+.menu--item-details {
+  margin-bottom: 1em;
+  line-height: 2rem;
+}
+
+.menu--item-basket {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+.menu--item-basket button {
+  flex-basis: 150px;
+}
+
+
+  /* ========== MEDIA QUERIES (MEDIUM DEVICES) ========= */
+
+  @media screen and (min-width: 768px) {
+    .menu--wrapper {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(4, auto);
+      grid-gap: var(--spacer-sm);
+      margin: var(--spacer-md) auto;
+    }
+  }
+
+
+    /* ========== MEDIA QUERIES (LARGE DEVICES) ========= */
+
+@media screen and (min-width: 1200px) {
+  .menu--wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    grid-template-rows: repeat(3, auto);
+    grid-gap: var(--spacer-sm);
+    margin: var(--spacer-md) auto;
+  }
+}

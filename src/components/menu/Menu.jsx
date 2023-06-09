@@ -1,6 +1,6 @@
 import "./menu.css";
 import Wine from "./Wine";
-import menuData from "../../data/menu.json";
+import menuData from "../data/menu.json";
 
 export default function Menu() {
   const { menu } = menuData;

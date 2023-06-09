@@ -1,0 +1,26 @@
+.banner--container {
+  margin: var(--spacer-lg) auto;
+}
+
+.banner--wrapper {
+  background: #FFA24B;
+  color: #FFF;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: clip;
+}
+
+.banner--wrapper h3 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  padding: 1em 0em;
+}
+
+.banner--wrapper-upper {
+  margin-bottom: -5px;
+}
+
+.banner--wrapper-lower {
+  margin-top: -5px;
+}

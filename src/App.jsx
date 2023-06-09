@@ -5,6 +5,7 @@ import Menu from './components/menu/Menu'
 import About from './components/about/About'
 import Footer from './components/footer/Footer'
 import Cart from './components/cart/Cart'
+import Banner from './components/banner/Banner'
 import wavyLine from './assets/wavy-line.svg'
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <Hero />
       <img src={wavyLine} alt="Wavy line" className="line--wavy"/>
       <Menu />
+      <Banner />
       <About />
       <Cart />
       <Footer />

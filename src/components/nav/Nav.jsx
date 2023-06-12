@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
+import { Context } from "../../context/AppContext";
 
 import "./nav.css";
 import logo from "../../assets/nwc-logo.svg";
@@ -6,6 +7,8 @@ import { Slant as Hamburger } from "hamburger-react";
 import { BsBag } from "react-icons/bs";
 
 export default function Nav() {
+  const { totalOrderCount } = useContext(Context);
+
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   function toggleMobileMenu() {
@@ -27,7 +30,10 @@ export default function Nav() {
             <li className="nav--item">
               <a href="#" className="nav--basket">
                 Cart
-              <BsBag className="nav--icon" style={{ fontSize: "1.75rem" }} />
+                <div className="nav--basket-icon-badge">
+                  <BsBag style={{ fontSize: "2rem" }} />
+                    {totalOrderCount ? <h4>{totalOrderCount}</h4> : null}
+                </div>
               </a>
             </li>
           </ul>

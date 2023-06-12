@@ -1,20 +1,32 @@
+import { useState, useEffect } from "react";
 import "./banner.css";
-import wavyBorderTop from "../../assets/orange-wave-top.svg";
-import wavyBorderBottom from "../../assets/orange-wave-bottom.svg";
 
 export default function Banner() {
+  const [scrollYPosition, setScrollYPosition] = useState(0);
+
+  function handleScroll() {
+    const position = window.pageYOffset / 5;
+    setScrollYPosition(position);
+  }
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const styles = { transform: `translate(-${scrollYPosition}px)` };
+
   return (
     <div className="banner--container">
-      <div className="banner--wrapper-upper">
-        <img src={wavyBorderTop} alt="A beautiful wavy border" />
-      </div>
       <div className="banner--wrapper">
-        <h3>
-          For natural wine lovers • For natural wine lovers • For natural wine lovers • For natural wine lovers • For natural wine lovers • For natural wine lovers
+        <h3 style={styles}>
+          For natural wine lovers • For natural wine lovers • For natural wine
+          lovers • For natural wine lovers • For natural wine lovers • For
+          natural wine lovers
         </h3>
-        </div>
-        <div className="banner--wrapper-lower">
-        <img src={wavyBorderBottom} alt="A beautiful wavy border" />
       </div>
     </div>
   );

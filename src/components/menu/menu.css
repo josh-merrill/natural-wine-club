@@ -71,6 +71,25 @@
 }
 
 
+#card--order-btn-order {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-bg);
+  color: var(--color-blue);
+  border: 2px solid var(--color-blue);
+  padding: 10px;
+}
+
+#card--order-btn:active {
+  box-shadow: none;
+  transform: translateY(-2px);
+  transform: translateX(2px);
+  border: 2px solid var(--color-blue);
+}
+
+
+
   /* ========== MEDIA QUERIES (MEDIUM DEVICES) ========= */
 
   @media screen and (min-width: 768px) {

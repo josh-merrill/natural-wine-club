@@ -10,9 +10,10 @@
       "winemaking": "Biodynamic",
       "description": "A full-bodied red wine with notes of dark fruits and spices.",
       "img": "../src/assets/wines/antonio.png",
-      "price": "$45",
+      "price": 45,
       "grape": "Grenache, Syrah, Mourvèdre",
-      "bottle_size": "75cl"
+      "bottle_size": "75cl",
+      "order_amount": 0
     },
     {
       "id": 2,
@@ -24,9 +25,10 @@
       "winemaking": "Biodynamic",
       "description": "A complex and robust red wine with flavors of cherry, truffle, and tar.",
       "img": "../src/assets/wines/antonio.png",
-      "price": "$55",
+      "price": 55,
       "grape": "Nebbiolo",
-      "bottle_size": "75cl"
+      "bottle_size": "75cl",
+      "order_amount": 0
     },
     {
       "id": 3,
@@ -40,7 +42,8 @@
       "img": "../src/assets/wines/antonio.png",
       "price": "$35",
       "grape": "Riesling",
-      "bottle_size": "75cl"
+      "bottle_size": "75cl",
+      "order_amount": 0
     },
     {
       "id": 4,
@@ -52,9 +55,10 @@
       "winemaking": "biodynamic",
       "description": "A delicate red wine with flavors of red berries and earthy undertones.",
       "img": "../src/assets/wines/antonio.png",
-      "price": "$40",
+      "price": 40,
       "grape": "Pinot Noir",
-      "bottle_size": "75cl"
+      "bottle_size": "75cl",
+      "order_amount": 0
     },
     {
       "id": 5,
@@ -66,9 +70,10 @@
       "winemaking": "biodynamic",
       "description": "A rich and buttery white wine with hints of tropical fruits and vanilla.",
       "img": "../src/assets/wines/antonio.png",
-      "price": "$30",
+      "price": 30,
       "grape": "Chardonnay",
-      "bottle_size": "75cl"
+      "bottle_size": "75cl",
+      "order_amount": 0
     },
     {
       "id": 6,
@@ -80,9 +85,10 @@
       "winemaking": "biodynamic",
       "description": "A bold and jammy red wine with blackberry and pepper notes.",
       "img": "../src/assets/wines/antonio.png",
-      "price": "$50",
+      "price": 50,
       "grape": "Zinfandel",
-      "bottle_size": "75cl"
+      "bottle_size": "75cl",
+      "order_amount": 0
     }
   ]
 }

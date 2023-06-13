@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Asul:wght@400;700&family=Montserrat:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Asul:wght@400;700&family=Montserrat:wght@400;700&display=swap");
 
 * {
   box-sizing: border-box;
@@ -10,14 +10,14 @@
 }
 
 :root {
-  --color-bg: #FFFBF1;
-  --color-blue: #104AE0;
+  --color-bg: #fffbf1;
+  --color-blue: #104ae0;
   --color-blue-secondary: rgba(16, 74, 224, 0.8);
-  --color-petnat: #FFD367;
-  --color-orange: #FFA24B;
-  --color-rose: #FF8979;
-  --color-red: #FF462D;
-  --color-white: #FFFFFF;
+  --color-petnat: #ffd367;
+  --color-orange: #ffa24b;
+  --color-rose: #ff8979;
+  --color-red: #ff462d;
+  --color-white: #ffffff;
   --color-light: rgba(255, 255, 255, 0.7);
   --color-gradient: linear-gradient(180deg, var(--color-blue), transparent);
   --transition: all 400ms ease;
@@ -38,7 +38,7 @@ html {
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 1rem;
@@ -49,8 +49,11 @@ body {
 
 /* ========== HEADING STYLES ========= */
 
-h1, h2, h3, h4 {
-  font-family: 'Asul', sans-serif;
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Asul", sans-serif;
 }
 
 h1 {
@@ -61,8 +64,8 @@ h1 {
 
 h2 {
   font-weight: 400;
-  font-size: 4rem;
-  line-height: 70px;
+  font-size: 2.25rem;
+  line-height: 1.25;
 }
 
 h3 {
@@ -75,8 +78,8 @@ h3 {
 
 .container {
   width: var(--container-width-sm);
+  padding-top: var(--spacer-sm);
   margin: 0 auto;
-  padding-top: 4em;
 }
 
 a {
@@ -86,13 +89,13 @@ a {
 }
 
 a:hover {
-  transition-duration: .3s;
+  transition-duration: 0.3s;
 }
 
 /* ========== BUTTON STYLES ========= */
 
 .btn-primary {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   background-color: var(--color-bg);
   color: var(--color-blue);
   border: 2px solid var(--color-blue);
@@ -102,20 +105,19 @@ a:hover {
   font-weight: 600;
   height: 46px;
   margin: 0.5em 0;
-  transition-duration: .3s;
+  transition-duration: 0.3s;
   width: 100%;
 }
 
 .btn-primary:hover {
-    background-color: var(--color-blue);
-    box-shadow: 0 0;
-    color: var(--color-white);
-    cursor: pointer;
+  background-color: var(--color-blue);
+  box-shadow: 0 0;
+  color: var(--color-white);
+  cursor: pointer;
 }
 
 .btn-secondary {
-  font-family: 'Montserrat', sans-serif;
-  background-color: var(--color-blue-secondary);
+  font-family: "Montserrat", sans-serif;
   background-color: var(--color-blue);
   color: var(--color-white);
   border: none;
@@ -124,7 +126,7 @@ a:hover {
   font-weight: 600;
   height: 51px;
   margin: 0.5em 0;
-  transition-duration: .3s;
+  transition-duration: 0.3s;
   width: 100%;
 }
 
@@ -140,11 +142,6 @@ a:hover {
   font-size: 1.25rem;
 }
 
-.line--wavy {
-  width: 100%;
-  margin: var(--spacer-lg) auto;
-}
-
 .line--blue {
   border: 1px solid var(--color-blue);
 }
@@ -154,6 +151,7 @@ a:hover {
 @media screen and (min-width: 768px) {
   .container {
     width: var(--container-width-md);
+    padding-top: var(--spacer-md);
     margin: 0 auto;
   }
 }
@@ -163,6 +161,7 @@ a:hover {
 @media screen and (min-width: 1024px) {
   .container {
     width: var(--container-width-lg);
+    max-width: 1400px;
     margin: 0 auto;
   }
 }

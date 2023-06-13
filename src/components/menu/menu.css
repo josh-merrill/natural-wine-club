@@ -1,13 +1,9 @@
-.menu--container {
-
-}
-
 .menu--wrapper {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: repeat(1, 1fr);
   grid-gap: var(--spacer-sm);
-  margin: var(--spacer-md) auto;
+  margin: var(--spacer-sm) auto;
 }
 
 .menu--item {
@@ -32,16 +28,13 @@
   border-radius: 50%;
 }
 
-.menu--item-title-wrapper {
-  padding: 2.25em 3.5em 0.75em;
+.menu--item-title-wrapper,
+.menu--item-bottom {
+  padding: 2em 1em;
 }
 
 .menu--item-title {
-  font-size: 2.5rem;
-}
-
-.menu--item-bottom {
-  padding: 2.25em 3.5em;
+  font-size: 2rem;
 }
 
 .menu--item-img {
@@ -94,23 +87,33 @@
 
   @media screen and (min-width: 768px) {
     .menu--wrapper {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(2, 50%);
       grid-template-rows: repeat(4, auto);
-      grid-gap: var(--spacer-sm);
       margin: var(--spacer-md) auto;
     }
+
+    .menu--container > h2 {
+      font-size: 4.5rem;
+    }
+
+    .menu--item-title {
+      font-size: 2.5rem;
+    }
+
   }
 
+/* ========== MEDIA QUERIES (LARGE DEVICES) ========= */
 
-    /* ========== MEDIA QUERIES (LARGE DEVICES) ========= */
+@media screen and (min-width: 1024px) {
+
+}
+
+/* ========== MEDIA QUERIES (LARGE DEVICES) ========= */
 
 @media screen and (min-width: 1200px) {
+
   .menu--wrapper {
-    display: grid;
     grid-template-columns: repeat(3, 33%);
     grid-template-rows: repeat(3, auto);
-    grid-gap: var(--spacer-sm);
-    margin: var(--spacer-md) auto;
   }
 }

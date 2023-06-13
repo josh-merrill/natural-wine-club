@@ -6,7 +6,7 @@ import About from './components/about/About'
 import Footer from './components/footer/Footer'
 import Cart from './components/cart/Cart'
 import Banner from './components/banner/Banner'
-import wavyLine from './assets/wavy-line.svg'
+import Wave from './components/wave/Wave'
 
 function App() {
 
@@ -14,7 +14,7 @@ function App() {
     <div>
       <Navbar />
       <Hero />
-      <img src={wavyLine} alt="Wavy line" className="line--wavy"/>
+      <Wave />
       <Menu />
       <Banner />
       <About />

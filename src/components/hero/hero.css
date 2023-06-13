@@ -2,28 +2,39 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: var(--spacer-md) auto;
+    margin: var(--spacer-sm) auto;
+    max-width: 290px;
   }
 
   .hero--title {
-    font-size: 4.25rem;
+    font-size: 3.5rem;
+    max-width: 290px;
     text-align: center;
   }
 
   .hero--svg-wrapper {
     display: flex;
     justify-content: center;
-    margin-top: var(--spacer-md);
+    margin-top: var(--spacer-sm);
   }
 
   .hero--svg {
-    max-width: 75%;
+    max-width: 100%;
   }
 
   /* ========== MEDIA QUERIES (MEDIUM DEVICES) ========= */
 
 @media screen and (min-width: 768px) {
+  .hero--container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: var(--spacer-md) auto;
+  }
 
+  .hero--svg-wrapper {
+    margin-top: var(--spacer-md);
+  }
 }
 
 /* ========== MEDIA QUERIES (LARGE DEVICES) ========= */
@@ -33,17 +44,36 @@
   .hero--container {
     flex-direction: row;
     justify-content: space-between;
+    max-width: none;
   }
 
   .hero--title {
-    font-size: 6.5rem;
-    max-width: 500px;
+    font-size: 5.5rem;
+    max-width: 450px;
     text-align: left;
   }
 
   .hero--svg-wrapper {
     justify-content: right;
-    width: 100%;
+    margin-top: 0;
+  }
+
+  .hero--svg {
+    max-width: 95%;
+  }
+
+}
+
+@media screen and (min-width: 1200px) {
+
+  .hero--title {
+    font-size: 6.5rem;
+    max-width: 500px;
+  }
+
+  .hero--svg-wrapper {
+    justify-content: right;
+    /* width: 100%; */
     margin-top: 0;
   }
 

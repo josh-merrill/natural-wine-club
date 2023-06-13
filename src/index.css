@@ -61,7 +61,7 @@ h1 {
 
 h2 {
   font-weight: 400;
-  font-size: 4rem;
+  font-size: 2.5rem;
   line-height: 70px;
 }
 
@@ -75,8 +75,8 @@ h3 {
 
 .container {
   width: var(--container-width-sm);
+  padding-top: var(--spacer-sm);
   margin: 0 auto;
-  padding-top: 4em;
 }
 
 a {
@@ -115,7 +115,6 @@ a:hover {
 
 .btn-secondary {
   font-family: 'Montserrat', sans-serif;
-  background-color: var(--color-blue-secondary);
   background-color: var(--color-blue);
   color: var(--color-white);
   border: none;
@@ -141,8 +140,9 @@ a:hover {
 }
 
 .line--wavy {
-  width: 100%;
-  margin: var(--spacer-lg) auto;
+  width: 100vw;
+  margin: var(--spacer-sm) auto;
+  overflow: hidden;
 }
 
 .line--blue {
@@ -154,7 +154,12 @@ a:hover {
 @media screen and (min-width: 768px) {
   .container {
     width: var(--container-width-md);
+    padding-top: var(--spacer-md);
     margin: 0 auto;
+  }
+
+  .line--wavy {
+    margin: var(--spacer-md) auto;
   }
 }
 
@@ -163,6 +168,11 @@ a:hover {
 @media screen and (min-width: 1024px) {
   .container {
     width: var(--container-width-lg);
+    max-width: 1400px;
     margin: 0 auto;
+  }
+
+  .line--wavy {
+    margin: var(--spacer-lg) auto;
   }
 }

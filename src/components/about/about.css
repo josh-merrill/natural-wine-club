@@ -9,10 +9,6 @@
   align-items: center;
 }
 
-.about--container-wrapper h2 {
-  line-height: 50px;
-}
-
 .about--container-info-text {
   margin-top: 27px;
   font-weight: 400;

@@ -84,7 +84,7 @@
       "winery": "tbd",
       "winemaking": "biodynamic",
       "description": "A bold and jammy red wine with blackberry and pepper notes.",
-      "img": "../src/assets/wines/antonio.png",
+      "img": "/src/assets/wines/antonio.png",
       "price": 50,
       "grape": "Zinfandel",
       "bottle_size": "75cl",

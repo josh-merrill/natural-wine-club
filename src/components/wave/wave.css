@@ -24,7 +24,6 @@
 @media screen and (min-width: 1024px) {
 
   .line--wavy {
-    margin: var(--spacer-lg) auto;
     width: 100%;
   }
 }

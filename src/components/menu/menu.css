@@ -30,12 +30,12 @@
 
 .menu--item-title-wrapper,
 .menu--item-bottom {
-  padding: 2em 1em;
+  padding: 1em;
 }
 
-.menu--item-title {
+/* .menu--item-title {
   font-size: 2rem;
-}
+} */
 
 .menu--item-img {
   width: 80px;
@@ -82,7 +82,6 @@
 }
 
 
-
   /* ========== MEDIA QUERIES (MEDIUM DEVICES) ========= */
 
   @media screen and (min-width: 768px) {
@@ -96,9 +95,9 @@
       font-size: 4.5rem;
     }
 
-    .menu--item-title {
+    /* .menu--item-title {
       font-size: 2.5rem;
-    }
+    } */
 
   }
 
@@ -116,4 +115,5 @@
     grid-template-columns: repeat(3, 33%);
     grid-template-rows: repeat(3, auto);
   }
+
 }

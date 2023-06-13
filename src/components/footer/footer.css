@@ -1,0 +1,47 @@
+footer {
+  background-color: var(--color-blue);
+  color: var(--color-white);
+}
+
+
+.footer--container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacer-lg);
+}
+
+
+.column {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+h4 {
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+footer li {
+  margin-bottom: 5px;
+  line-height: 210%;
+}
+
+/* Additional styling if needed */
+
+/* footer {
+  margin-top: 50px;
+  text-align: center;
+  color: #999;
+  font-size: 14px;
+}
+ */

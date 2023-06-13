@@ -37,8 +37,6 @@
   line-height: 42px;
 }
 
-
-
   /* ========== MEDIA QUERIES (MEDIUM DEVICES) ========= */
 
   @media screen and (min-width: 768px) {
@@ -80,12 +78,12 @@
 
   .about--img-top {
     width: 45%;
-    border-radius: 50% 0 0% 50%;
+    border-radius: 220px 0 0% 220px;
   }
 
   .about--img-bottom {
     width: 45%;
-    border-radius: 0% 50% 50% 0%;
+    border-radius: 0% 220px 220px 0%;
     order: 0;
   }
 

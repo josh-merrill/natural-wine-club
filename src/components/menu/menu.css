@@ -13,7 +13,7 @@
 
 .menu--item-top {
   position: relative;
-  padding: 0.5em 3.5em;
+  padding: 1em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -57,12 +57,12 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 1em;
+  gap: 0.25em;
 }
 
 .menu--item-basket button {
   flex-basis: 150px;
 }
-
 
 #card--order-btn-order {
   display: flex;

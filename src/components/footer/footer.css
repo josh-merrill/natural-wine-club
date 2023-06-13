@@ -1,47 +1,101 @@
-footer {
+.footer--container {
   background-color: var(--color-blue);
+  color: var(--color-white);
+  padding: var(--spacer-sm);
+  text-align: center;
+}
+
+.footer--container a {
   color: var(--color-white);
 }
 
+.footer--logo {
+  display: block;
+}
 
-.footer--container {
+.footer--social {
+  margin-top: var(--spacer-sm);
+}
+
+.footer--social {
+  display: inline-block;
+}
+
+.footer--social a:not(:last-child) {
+  margin-right: 1em;
+}
+
+.footer--social-icon {
+
+}
+
+.footer--links  {
+  flex-direction: column;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: var(--spacer-lg);
+  line-height: 2.25 ;
+}
+
+.footer--links.col1 {
+  margin-top: var(--spacer-sm);
+}
+
+.footer--cta {
+  margin-top: var(--spacer-sm);
+  /* color: var(--color-light); */
+}
+
+.footer--copyright {
+  margin-top: var(--spacer-sm);
+  color: var(--color-light);
 }
 
 
-.column {
-  flex: 1;
-  margin-right: 20px;
-}
+@media screen and (min-width: 1024px ) {
 
-.logo {
-  width: 50px;
-  height: 50px;
-}
 
-h4 {
-  margin-bottom: 10px;
-}
+  .footer--container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) 2fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+        "footer--logo links1 links2 cta"
+        "footer--social links1 links2 copyright";
+    place-items: center;
+    font-size: 18px;
+    padding: var(--spacer-lg);
+  }
 
-ul {
-  list-style-type: none;
-  padding: 0;
-}
+  .footer--logo {
+    grid-area: footer--logo;
+  }
 
-footer li {
-  margin-bottom: 5px;
-  line-height: 210%;
-}
+  .footer--social {
+    grid-area: footer--social;
+    margin-top: 0;
+  }
 
-/* Additional styling if needed */
+  .footer--links {
+    align-items: start;
+  }
 
-/* footer {
-  margin-top: 50px;
-  text-align: center;
-  color: #999;
-  font-size: 14px;
+  .footer--links.col1 {
+    grid-area: links1;
+    margin-top: 0;
+  }
+
+  .footer--links.col2 {
+    grid-area: links2;
+  }
+
+  .footer--cta {
+    grid-area: cta;
+    margin-top: 0;
+  }
+
+  .footer--copyright {
+    grid-area: copyright;
+    margin-top: 0;
+  }
+
 }
- */

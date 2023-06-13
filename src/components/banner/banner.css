@@ -1,11 +1,6 @@
 .banner--container {
-  margin: var(--spacer-md) auto;
-  position:relative
-}
-
-.banner--wrapper {
-  background: #FFA24B;
-  color: #FFF;
+  background: #ffa24b;
+  color: #fff;
   padding: 4em 0em;
   text-align: center;
   white-space: nowrap;
@@ -13,31 +8,27 @@
   text-overflow: clip;
   position: relative;
 
-      /* mask created with
+  /* mask created with
   https://css-generators.com/wavy-shapes/ */
 
-  --mask:
-    radial-gradient(67.08px at 50% 90.00px,#000 99%,#0000 101%) calc(50% - 60px) 0/120px 51% repeat-x,
-    radial-gradient(67.08px at 50% -60px,#0000 99%,#000 101%) 50% 30px/120px calc(51% - 30px) repeat-x,
-    radial-gradient(67.08px at 50% calc(100% - 90.00px),#000 99%,#0000 101%) calc(50% - 60px) 100%/120px 51% repeat-x,
-    radial-gradient(67.08px at 50% calc(100% + 60.00px),#0000 99%,#000 101%) 50% calc(100% - 30px)/120px calc(51% - 30px) repeat-x;
+  --mask: radial-gradient(67.08px at 50% 90px, #000 99%, #0000 101%)
+      calc(50% - 60px) 0/120px 51% repeat-x,
+    radial-gradient(67.08px at 50% -60px, #0000 99%, #000 101%) 50% 30px/120px
+      calc(51% - 30px) repeat-x,
+    radial-gradient(67.08px at 50% calc(100% - 90px), #000 99%, #0000 101%)
+      calc(50% - 60px) 100%/120px 51% repeat-x,
+    radial-gradient(67.08px at 50% calc(100% + 60px), #0000 99%, #000 101%) 50%
+      calc(100% - 30px) / 120px calc(51% - 30px) repeat-x;
   -webkit-mask: var(--mask);
-          mask: var(--mask);
+  mask: var(--mask);
 }
 
-.banner--wrapper h3 {
+.banner--container h3 {
   text-transform: uppercase;
 }
 
-
 @media screen and (min-width: 768px) {
-
-  .banner--wrapper {
-    padding: 5em 0em;
-
-  }
-
-  .banner--wrapper h3 {
+  .banner--container h3 {
     font-size: 2.5rem;
   }
 }

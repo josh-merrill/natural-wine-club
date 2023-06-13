@@ -42,7 +42,7 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 1.125rem;
-  line-height: 19px;
+  line-height: 1.75;
   color: var(--color-blue);
   background-color: var(--color-bg);
 }

@@ -5,7 +5,7 @@ export default function Banner() {
   const [scrollYPosition, setScrollYPosition] = useState(0);
 
   function handleScroll() {
-    const position = window.pageYOffset / 5;
+    const position = window.pageYOffset / 3;
     setScrollYPosition(position);
   }
 

@@ -18,7 +18,6 @@ function App() {
       <Menu />
       <Banner />
       <About />
-      <Cart />
       <Footer />
     </div>
   )

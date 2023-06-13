@@ -139,11 +139,6 @@ a:hover {
   font-size: 1.25rem;
 }
 
-.line--wavy {
-  width: 100vw;
-  margin: var(--spacer-sm) auto;
-  overflow: hidden;
-}
 
 .line--blue {
   border: 1px solid var(--color-blue);

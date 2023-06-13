@@ -1,0 +1,30 @@
+.line--wavy-wrapper {
+  overflow: hidden;
+}
+
+.line--wavy {
+  margin: var(--spacer-sm) auto;
+}
+
+.line--blue {
+  border: 1px solid var(--color-blue);
+}
+
+/* ========== MEDIA QUERIES (MEDIUM DEVICES) ========= */
+
+@media screen and (min-width: 768px) {
+
+  .line--wavy {
+    margin: var(--spacer-md) auto;
+  }
+}
+
+/* ========== MEDIA QUERIES (LARGE DEVICES) ========= */
+
+@media screen and (min-width: 1024px) {
+
+  .line--wavy {
+    margin: var(--spacer-lg) auto;
+    width: 100%;
+  }
+}

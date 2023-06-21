@@ -1,0 +1,13 @@
+.item--badge {
+  position: absolute;
+  width: 125px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 30px;
+  left: 30px;
+  padding: 15px 40px;
+  border: 1px solid blue;
+  border-radius: 50%;
+}

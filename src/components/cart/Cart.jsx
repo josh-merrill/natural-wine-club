@@ -3,10 +3,7 @@ import { useContext } from "react";
 import { Context } from "../../context/AppContext";
 
 export default function Cart() {
-  const { cartItems, addToCart, removeFromCart } = useContext(Context);
-
-  // Check if the cart item is greater than 0 and if it is, then show the item in the cart
-  // if not, then don't show the item in the cart
+  const { cartItems, addToCart, removeFromCart, handleCart } = useContext(Context);
 
   const cartItemElements = cartItems.map((item) => {
 
@@ -53,10 +50,15 @@ export default function Cart() {
 
   return (
     <section className="container">
+
       <div className="cart--container">
-        <h2>Cart</h2>
+        <h2>Your Cart Items</h2>
         <div className="cart--item-container">
           {cartItemElements}
+        </div>
+        <div className="cart--nav-button">
+        <button className="btn-primary" onClick={handleCart}>Go back</button>
+          <button className="btn-secondary">Checkout</button>
         </div>
       </div>
     </section>

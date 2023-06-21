@@ -127,7 +127,7 @@ a:hover {
   height: 51px;
   margin: 0.5em 0;
   transition-duration: 0.3s;
-  width: 100%;
+  width: 200px;
 }
 
 .btn-secondary:hover {

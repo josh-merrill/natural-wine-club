@@ -7,6 +7,12 @@ function ContextProvider({ children }) {
   const [viewCart, setViewCart] = useState(false);
   const [totalOrderCount, setTotalOrderCount] = useState(0);
 
+
+  function handleCart() {
+    setViewCart(prevState => !prevState);
+    // document.body.style.overflow = "hidden";
+  }
+
   function addToCart(newItem) {
     setCartItems((prevItems) => {
       const itemExists = prevItems.find((item) => item.id === newItem.id);
@@ -45,6 +51,7 @@ function ContextProvider({ children }) {
         cartItems,
         viewCart,
         setViewCart,
+        handleCart,
         addToCart,
         removeFromCart,
         totalOrderCount,

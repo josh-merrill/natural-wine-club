@@ -1,0 +1,118 @@
+.cart--wrapper {
+  z-index: 10;
+  background-color: var(--color-bg);
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  background-position: center;
+  overflow-y: scroll;
+}
+
+.cart--title {
+  text-align: center;
+  margin-bottom: var(--spacer-sm);
+}
+
+.cart--item-container {
+  display: flex;
+  flex-direction: column;
+  border: 3px solid var(--color-blue);
+  border-radius: 20px;
+  min-height: 50vh;
+}
+
+.center {
+  justify-content: center;
+}
+
+.cart--empty {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart--item {
+  display: grid;
+  grid-column-gap: 2rem;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 6rem 4rem;
+  grid-template-areas:
+    "cart--item-img cart--item-name"
+    "cart--item-amount cart--item-price";
+  transition-duration: 0.2s;
+  justify-content: center;
+  align-items: center;
+  grid-auto-flow: row;
+  width: 100%;
+  border-bottom: 3px dotted var(--color-blue);
+  padding: 2rem 2rem;
+}
+
+.cart--item:last-child {
+  border-bottom: none;
+}
+
+.cart--item-img {
+  grid-area: cart--item-img;
+  justify-self: center;
+}
+
+.cart--item-img img {
+  width: 30px;
+  transform: rotate(45deg);
+}
+
+.cart--item-name {
+  grid-area: cart--item-name;
+  width: 150px;
+}
+
+.cart--item-name > * {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.cart--item-amount {
+  justify-self: center;
+  grid-area: cart--item-amount;
+}
+
+.cart--item-price {
+  grid-area: cart--item-price;
+}
+
+.cart--nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: var(--spacer-sm) 0;
+}
+
+.cart--nav-back:hover {
+  color: var(--color-blue-secondary);
+  cursor: pointer;
+  transform: translateX(-15px);
+  transition: transform 0.3s ease-in-out;
+}
+
+@media screen and (min-width: 768px) {
+  .cart--item {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3rem 4rem;
+  }
+
+  .cart--title {
+    text-align: left;
+  }
+
+  .cart--item-name {
+    width: 175px;
+  }
+}

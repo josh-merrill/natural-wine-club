@@ -23,10 +23,10 @@
   --transition: all 400ms ease;
   --transform: scale(1.02);
 
-  --spacer-sm: 2em;
-  --spacer-md: 4em;
-  --spacer-lg: 6em;
-  --spacer-xl: 8em;
+  --spacer-sm: 2rem;
+  --spacer-md: 4rem;
+  --spacer-lg: 6rem;
+  --spacer-xl: 8rem;
 
   --container-width-lg: 75%;
   --container-width-md: 86%;

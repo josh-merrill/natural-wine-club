@@ -24,9 +24,7 @@ export default function Menu() {
 
   return (
     <section className="container">
-      {viewCart ? (
-        <Cart />
-      ) : (
+      {viewCart ? <Cart /> : null}
         <div id="menu" className="menu--container">
           <h2>Wines of the month</h2>
           <div className="menu--wrapper">{menuItemElements}</div>
@@ -36,7 +34,6 @@ export default function Menu() {
             </button>
           </div>
         </div>
-      )}
     </section>
   );
 }

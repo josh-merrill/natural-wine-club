@@ -10,7 +10,8 @@ function ContextProvider({ children }) {
 
   function handleCart() {
     setViewCart(prevState => !prevState);
-    // document.body.style.overflow = "hidden";
+    document.body.style.overflow = "hidden";
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 
   function addToCart(newItem) {

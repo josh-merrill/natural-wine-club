@@ -1,26 +1,61 @@
 import "./cart.css";
-import { useContext } from "react";
+import { useState, useEffect, useContext } from "react";
 import { Context } from "../../context/AppContext";
 
+
 export default function Cart() {
-  const { cartItems, addToCart, removeFromCart, setViewCart } = useContext(
-    Context
-  )
+  const { cartItems, addToCart, removeFromCart, setViewCart } =
+    useContext(Context);
+
+  const [isCheckingOut, setIsCheckingOut] = useState(false);
+  const [isOrderPlaced, setIsOrderPlaced] = useState(false);
+
+  useEffect(() => {
+    if (isCheckingOut) {
+      const timer = setTimeout(() => {
+        setIsOrderPlaced(true);
+      }, 3000);
+
+      return () => clearTimeout(timer);
+    }
+  }, [isCheckingOut]);
 
   function handleClose() {
     setViewCart(false);
     document.body.style.overflow = "auto";
   }
 
+  function handleCheckout() {
+    setIsCheckingOut(true);
+  }
+
   const cartItemsEmpty = (
     <div className="cart--empty">
-      <h2>Your cart is empty 🍷</h2>
+      <h3>Your cart is empty 🍷</h3>
       <p>Add some items to your cart and come back!</p>
     </div>
-  )
+  );
+
+  const cartCheckout = (
+    <>
+      {isOrderPlaced ? (
+        <div>
+          <h3>Your order was placed</h3>
+          <p>Thank you for your purchase!</p>
+        </div>
+      ) : (
+        <div>
+          <h3>Bottling up your order</h3>
+        <div className="checkout--spinner-container">
+          <div className="checkout--spinner"></div>
+          </div>
+        </div>
+      )}
+    </>
+  );
 
   const cartItemElements = cartItems.map((item) => {
-    const itemTotal = item.price * item.order_amount
+    const itemTotal = item.price * item.order_amount;
 
     return (
       <div key={item.id} className="cart--item">
@@ -46,23 +81,29 @@ export default function Cart() {
           <h3>${itemTotal}</h3>
         </div>
       </div>
-    )
-  })
+    );
+  });
 
   return (
-    <section className="cart--wrapper">
+    <section className="cart--component-wrapper">
       <div className="container">
+        <div className="cart--container">
+
         <h2 className="cart--title">Your Cart Items</h2>
-        <div className={`cart--item-container ${cartItems.length > 0 ? '' : 'center'}`}>
-          {cartItems.length > 0 ? cartItemElements : cartItemsEmpty}
+        <div className={`cart--item-container ${cartItems.length === 0 || isCheckingOut ? 'center' : ''}`}>
+        {isCheckingOut ?
+        (cartCheckout) : (cartItems.length > 0 ? cartItemElements : cartItemsEmpty)}
         </div>
         <div className="cart--nav">
           <a className="cart--nav-back bold" onClick={handleClose}>
             &#8592; Continue shopping
           </a>
-          <button className="btn-secondary">Checkout</button>
+          <button className="btn-secondary" onClick={handleCheckout}>
+            Checkout
+          </button>
+        </div>
         </div>
       </div>
     </section>
-  )
+  );
 }

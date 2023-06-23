@@ -98,7 +98,9 @@ export default function Cart() {
           <a className="cart--nav-back bold" onClick={handleClose}>
             &#8592; Continue shopping
           </a>
-          <button className="btn-secondary" onClick={handleCheckout}>
+          <button className="btn-secondary" onClick={handleCheckout}
+
+          disabled={cartItems.length === 0 ? true : false}>
             Checkout
           </button>
         </div>

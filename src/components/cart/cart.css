@@ -98,6 +98,20 @@
   grid-area: cart--item-price;
 }
 
+.cart--total-container {
+  display: flex;
+  justify-content: center;
+}
+
+.cart--total {
+  width: 197px;
+  margin-top: var(--spacer-sm);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0.5rem;
+}
+
 .cart--nav {
   display: flex;
   flex-direction: column;
@@ -150,6 +164,11 @@
 
   .cart--item-name {
     width: 175px;
+  }
+
+
+  .cart--total-container {
+    justify-content: flex-end;
   }
 
   .cart--nav {

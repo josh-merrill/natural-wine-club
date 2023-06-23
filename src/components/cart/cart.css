@@ -120,6 +120,10 @@
   margin: var(--spacer-sm) 0;
 }
 
+.cart--nav-back {
+  margin-bottom: var(--spacer-sm);
+}
+
 .cart--nav-back:hover {
   color: var(--color-blue-secondary);
   cursor: pointer;
@@ -173,5 +177,9 @@
 
   .cart--nav {
     flex-direction: row;
+  }
+
+  .cart--nav-back {
+    margin-bottom: 0;
   }
 }

@@ -7,7 +7,7 @@ import { Slant as Hamburger } from "hamburger-react";
 import { BsBag } from "react-icons/bs";
 
 export default function Nav() {
-  const { totalOrderCount } = useContext(Context);
+  const { totalOrderCount, handleCart } = useContext(Context);
 
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -28,21 +28,18 @@ export default function Nav() {
               <a href="#about">About</a>
             </li>
             <li className="nav--item">
-              <a href="#" className="nav--basket">
+              <a href="#" className="nav--basket" onClick={handleCart}>
                 Cart
                 <div className="nav--basket-icon-badge">
                   <BsBag style={{ fontSize: "2rem" }} />
-                    {totalOrderCount ? <h4>{totalOrderCount}</h4> : null}
+                  {totalOrderCount ? <h4>{totalOrderCount}</h4> : null}
                 </div>
               </a>
             </li>
           </ul>
         </div>
         <button className="nav--toggle" onClick={toggleMobileMenu}>
-          <Hamburger
-            duration={0.2}
-            color="var(--color-blue)"
-          />
+          <Hamburger duration={0.2} color="var(--color-blue)" />
         </button>
       </nav>
     </section>

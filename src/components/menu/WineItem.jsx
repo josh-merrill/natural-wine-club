@@ -37,7 +37,9 @@ export default function WineItem({ item }) {
   return (
     <div key={item.id} className="menu--item">
       <div className="menu--item-top">
+        <div className="item--badge-absolute">
         <Badge item={item} />
+        </div>
         <img src={item.img} alt={item.name} className="menu--item-img" />
       </div>
       <div className="menu--item-title-wrapper">

@@ -10,6 +10,12 @@ export default function Cart() {
   const [isCheckingOut, setIsCheckingOut] = useState(false);
   const [isOrderPlaced, setIsOrderPlaced] = useState(false);
 
+  const totalPrice = cartItems.reduce((acc, item) => {
+    return acc + item.price * item.order_amount;
+  }, 0);
+  const totalPriceTax = (totalPrice * 0.205).toFixed(2)
+  const totalPriceIncludingTax = (Number(totalPrice) + Number(totalPriceTax)).toFixed(2)
+
   useEffect(() => {
     if (isCheckingOut) {
       const timer = setTimeout(() => {
@@ -56,7 +62,6 @@ export default function Cart() {
 
   const cartItemElements = cartItems.map((item) => {
     const itemTotal = item.price * item.order_amount;
-
     return (
       <div key={item.id} className="cart--item">
         <div className="cart--item-img">
@@ -70,9 +75,11 @@ export default function Cart() {
           <button
             className="btn-secondary"
             id="card--order-btn-order"
-            onClick={() => removeFromCart(item)}
+
           >
-            <span>-</span>
+            <span
+            onClick={() => removeFromCart(item)}
+            >-</span>
             <span>{item.order_amount}</span>
             <span onClick={() => addToCart(item)}>+</span>
           </button>
@@ -94,11 +101,21 @@ export default function Cart() {
         {isCheckingOut ?
         (cartCheckout) : (cartItems.length > 0 ? cartItemElements : cartItemsEmpty)}
         </div>
+        <div className="cart--total-container">
+          <div className="cart--total">
+            <p>Tax</p>
+            <h3>${totalPriceTax}</h3>
+            <p>Total</p>
+            <h3>${totalPriceIncludingTax}</h3>
+            </div>
+        </div>
         <div className="cart--nav">
           <a className="cart--nav-back bold" onClick={handleClose}>
             &#8592; Continue shopping
           </a>
-          <button className="btn-secondary" onClick={handleCheckout}>
+          <button className="btn-secondary" onClick={handleCheckout}
+
+          disabled={cartItems.length === 0 ? true : false}>
             Checkout
           </button>
         </div>

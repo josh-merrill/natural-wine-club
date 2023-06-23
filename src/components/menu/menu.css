@@ -7,7 +7,7 @@
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: repeat(1, 1fr);
   grid-gap: var(--spacer-sm);
-  margin-bottom: var(--spacer-sm);
+  margin: var(--spacer-sm) 0;
 }
 
 .menu--item {
@@ -27,10 +27,6 @@
 .menu--item-bottom {
   padding: 1em;
 }
-
-/* .menu--item-title {
-  font-size: 2rem;
-} */
 
 .menu--item-img {
   width: 80px;

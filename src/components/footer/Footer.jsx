@@ -1,31 +1,31 @@
 import "./footer.css";
 import Top from "../top/FooterNav";
 import footerLogo from "../../assets/footer-logo.svg";
-import { FaInstagramSquare } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
-import { FaTwitterSquare } from "react-icons/fa";
+import { FiInstagram } from "react-icons/fi";
+import { FiFacebook } from "react-icons/fi";
+import { FiTwitter } from "react-icons/fi";
 
 export default function Footer() {
   return (
     <footer className="footer--wrapper">
       <div className="footer--container container">
-        <div className="footer--info">
-          <a href="#top" className="footer--logo">
+        <div className="footer--logo">
+          <a href="#top">
             <img src={footerLogo} alt="Logo" />
           </a>
+        </div>
 
           <div className="footer--social">
             <a href="#" className="footer--social-icon">
-              <FaInstagramSquare />
+              <FiFacebook />
             </a>
             <a href="#" className="footer--social-icon">
-              <FaLinkedin />
+              <FiInstagram />
             </a>
             <a href="#" className="footer--social-icon">
-              <FaTwitterSquare />
+              <FiTwitter />
             </a>
           </div>
-        </div>
 
         <div className="footer--links col1">
           <a href="#">All Wines</a>

@@ -1,0 +1,18 @@
+.footer--nav-container {
+  width: 100%;
+  background-color: var(--color-blue-secondary);
+}
+.footer--nav {
+  padding: 0.75rem;
+  display: flex;
+  justify-content: center;
+}
+
+.footer--nav a {
+  color: var(--color-white);
+  text-decoration: none;
+}
+
+.footer--nav a:hover {
+  color: var(--color-petnat);
+}

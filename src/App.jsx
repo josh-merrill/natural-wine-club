@@ -10,7 +10,7 @@ import Wave from './components/wave/Wave'
 function App() {
 
   return (
-    <div>
+    <>
       <Navbar />
       <Hero />
       <Wave />
@@ -18,7 +18,7 @@ function App() {
       <Banner />
       <About />
       <Footer />
-    </div>
+    </>
   )
 }
 

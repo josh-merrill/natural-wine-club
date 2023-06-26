@@ -1,12 +1,20 @@
-.footer--container {
+
+
+.footer--wrapper {
   background-color: var(--color-blue);
-  color: var(--color-white);
+}
+
+.footer--container {
   padding: var(--spacer-sm);
   text-align: center;
 }
 
 .footer--container a {
   color: var(--color-white);
+}
+
+.footer--container a:hover {
+  color: var(--color-petnat);
 }
 
 .footer--logo {
@@ -17,16 +25,12 @@
   margin-top: var(--spacer-sm);
 }
 
-.footer--social {
-  display: inline-block;
-}
-
 .footer--social a:not(:last-child) {
   margin-right: 1em;
 }
 
 .footer--social-icon {
-
+  font-size: 1.5rem;
 }
 
 .footer--links  {
@@ -50,7 +54,6 @@
   color: var(--color-light);
 }
 
-
 @media screen and (min-width: 1024px ) {
 
 
@@ -59,11 +62,15 @@
     grid-template-columns: repeat(3, 1fr) 2fr;
     grid-template-rows: repeat(2, 1fr);
     grid-template-areas:
-        "footer--logo links1 links2 cta"
-        "footer--social links1 links2 copyright";
+        "footer--info links1 links2 cta"
+        "footer--info links1 links2 copyright";
     place-items: center;
     font-size: 18px;
-    padding: var(--spacer-lg);
+    padding: var(--spacer-lg) 0;
+  }
+
+  .footer--info {
+    grid-area: footer--info;
   }
 
   .footer--logo {
@@ -90,7 +97,7 @@
 
   .footer--cta {
     grid-area: cta;
-    margin-top: 0;
+    margin-top: 1rem;
   }
 
   .footer--copyright {

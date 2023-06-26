@@ -29,7 +29,7 @@
 
 .nav--menu.active {
   position: absolute;
-  margin-top: var(--spacer-md);
+  margin-top: var(--spacer-sm);
   top: 100%;
   display: flex;
   flex-direction: column;

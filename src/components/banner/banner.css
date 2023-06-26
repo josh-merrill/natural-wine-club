@@ -1,4 +1,4 @@
-.banner--container {
+.banner--wrapper {
   background: #ffa24b;
   color: #fff;
   padding: 4em 0em;
@@ -6,7 +6,6 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: clip;
-  position: relative;
 
   /* mask created with
   https://css-generators.com/wavy-shapes/ */
@@ -23,12 +22,14 @@
   mask: var(--mask);
 }
 
-.banner--container h3 {
+.banner--wrapper h3 {
   text-transform: uppercase;
 }
 
+  /* ========== MEDIA QUERIES (MEDIUM DEVICES) ========= */
+
 @media screen and (min-width: 768px) {
-  .banner--container h3 {
+  .banner--wrapper h3 {
     font-size: 2.5rem;
   }
 }

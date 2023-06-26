@@ -20,11 +20,13 @@ export default function Banner() {
   const styles = { transform: `translate(-${scrollYPosition}px)` };
 
   return (
-      <section className="banner--container">
+      <section className="banner--wrapper">
         <h3 style={styles}>
           For natural wine lovers • For natural wine lovers • For natural wine
           lovers • For natural wine lovers • For natural wine lovers • For
-          natural wine lovers
+          natural wine lovers For natural wine lovers • For natural wine lovers
+          • For natural wine lovers • For natural wine lovers • For natural wine lovers
+          • For natural wine lovers
         </h3>
       </section>
   );

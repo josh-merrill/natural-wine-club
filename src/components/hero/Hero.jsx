@@ -3,7 +3,7 @@ import heroImg from "../../assets/hero-illustration.svg"
 
 export default function Hero() {
   return (
-    <section className="container">
+    <section className="hero--wrapper container">
       <div className="hero--container">
           <h1 className="hero--title">Welcome to Natural Wine Club</h1>
           <div className="hero--svg-wrapper">

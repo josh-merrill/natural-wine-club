@@ -62,15 +62,11 @@
     grid-template-columns: repeat(3, 1fr) 2fr;
     grid-template-rows: repeat(2, 1fr);
     grid-template-areas:
-        "footer--info links1 links2 cta"
-        "footer--info links1 links2 copyright";
+        "footer--logo links1 links2 cta"
+        "footer--social links1 links2 copyright";
     place-items: center;
     font-size: 18px;
     padding: var(--spacer-lg) 0;
-  }
-
-  .footer--info {
-    grid-area: footer--info;
   }
 
   .footer--logo {

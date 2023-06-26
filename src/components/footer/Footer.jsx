@@ -8,6 +8,7 @@ import { FiTwitter } from "react-icons/fi";
 export default function Footer() {
   return (
     <footer className="footer--wrapper">
+
       <div className="footer--container container">
         <div className="footer--logo">
           <a href="#top">
@@ -15,17 +16,17 @@ export default function Footer() {
           </a>
         </div>
 
-          <div className="footer--social">
-            <a href="#" className="footer--social-icon">
-              <FiFacebook />
-            </a>
-            <a href="#" className="footer--social-icon">
-              <FiInstagram />
-            </a>
-            <a href="#" className="footer--social-icon">
-              <FiTwitter />
-            </a>
-          </div>
+        <div className="footer--social">
+          <a href="#" className="footer--social-icon">
+            <FiFacebook />
+          </a>
+          <a href="#" className="footer--social-icon">
+            <FiInstagram />
+          </a>
+          <a href="#" className="footer--social-icon">
+            <FiTwitter />
+          </a>
+        </div>
 
         <div className="footer--links col1">
           <a href="#">All Wines</a>
@@ -46,6 +47,7 @@ export default function Footer() {
         <div className="footer--copyright">
           <p>&copy; NWC. All Rights Reserved.</p>
         </div>
+        
       </div>
       <Top />
     </footer>

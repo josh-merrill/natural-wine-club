@@ -1,4 +1,4 @@
-import { useState, useContext } from "react";
+import { useState, useContext, useEffect } from "react";
 import { Context } from "../../context/AppContext";
 
 import "./nav.css";
@@ -7,20 +7,37 @@ import { Slant as Hamburger } from "hamburger-react";
 import { BsBag } from "react-icons/bs";
 
 export default function Nav() {
-  const { totalOrderCount, handleCart } = useContext(Context);
+  const { totalOrderCount, handleCart } = useContext(Context)
+  const [mobileMenu, setMobileMenu] = useState(false)
+  const [isSmallScreen, setIsSmallScreen] = useState(false)
 
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  useEffect(() => {
+    function handleResize() {
+      setIsSmallScreen(window.innerWidth <= 768)
+    }
 
-  function toggleMobileMenu() {
-    setIsMobileMenuOpen(!isMobileMenuOpen);
+    handleResize()
+    window.addEventListener("resize", handleResize)
+
+    return () => {
+      window.removeEventListener("resize", handleResize)
+    }
+  }, [])
+
+  function closeMobileMenu() {
+    setMobileMenu(false)
   }
 
   return (
     <section className="container">
       <nav className="nav--container">
-        <img className="nav--logo" src={logo} />
-        <div className={`nav--menu ${isMobileMenuOpen ? "active" : ""}`}>
-          <ul className="nav--list">
+        <a href="/" onClick={closeMobileMenu}>
+          <img className="nav--logo" src={logo} />
+        </a>
+        <div
+          className={`nav--menu ${mobileMenu && isSmallScreen ? "active" : ""}`}
+        >
+          <ul className="nav--list" onClick={closeMobileMenu}>
             <li className="nav--item">
               <a href="#menu">Menu</a>
             </li>
@@ -38,10 +55,16 @@ export default function Nav() {
             </li>
           </ul>
         </div>
-        <button className="nav--toggle" onClick={toggleMobileMenu}>
-          <Hamburger duration={0.2} color="var(--color-blue)" />
-        </button>
+        <div className="nav--toggle">
+          <Hamburger
+            className="nav--toggle"
+            duration={0.2}
+            color="var(--color-blue)"
+            toggled={mobileMenu}
+            toggle={setMobileMenu}
+          />
+        </div>
       </nav>
     </section>
-  );
+  )
 }

@@ -29,7 +29,7 @@ export default function Nav() {
   }
 
   return (
-    <section className="container">
+    <section id="top" className="container">
       <nav className="nav--container">
         <a href="/" onClick={closeMobileMenu}>
           <img className="nav--logo" src={logo} />

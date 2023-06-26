@@ -149,7 +149,7 @@ a:hover {
 }
 
 .btn-light:hover {
-  background-color: var(--color-light);
+  background-color: var(--color-petnat);
   cursor: pointer;
 }
 

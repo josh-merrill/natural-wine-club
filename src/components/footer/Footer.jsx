@@ -9,7 +9,7 @@ export default function Footer() {
   return (
     <footer className="footer--wrapper">
 
-      <div className="footer--container container">
+      <div className="container footer--container">
         <div className="footer--logo">
           <a href="#top">
             <img src={footerLogo} alt="Logo" />

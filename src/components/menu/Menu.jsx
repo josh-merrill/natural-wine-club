@@ -23,12 +23,12 @@ export default function Menu() {
   ));
 
   return (
-    <section className="container">
+    <section className="menu--wrapper container">
       {viewCart ? <Cart /> : null}
         <div id="menu" className="menu--container">
           <h2>Wines of the month</h2>
-          <div className="menu--wrapper">{menuItemElements}</div>
-          <div className="menu--showcart-btn-wrapper">
+          <div className="menu--container-wrapper">{menuItemElements}</div>
+          <div className="menu--btn-wrapper">
             <button className="btn-secondary" onClick={handleCart}>
               View Cart
             </button>

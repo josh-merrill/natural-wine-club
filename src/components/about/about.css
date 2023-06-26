@@ -35,10 +35,6 @@
       margin: var(--spacer-md);
     }
 
-    .about--container  {
-      gap: var(--spacer-sm);
-    }
-
   }
 
 /* ========== MEDIA QUERIES (LARGE DEVICES) ========= */

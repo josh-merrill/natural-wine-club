@@ -1,18 +1,23 @@
-.footer--nav-container {
+.footer--nav-wrapper {
   width: 100%;
   background-color: var(--color-blue-secondary);
-}
-.footer--nav {
-  padding: 0.75rem;
   display: flex;
   justify-content: center;
+  padding: 1rem 0;
 }
 
-.footer--nav a {
-  color: var(--color-white);
-  text-decoration: none;
+.footer--nav-wrapper a {
+  color: var(--color-bg);
+  transition: var(--transition);
 }
 
-.footer--nav a:hover {
+.footer--nav-wrapper a:hover {
   color: var(--color-petnat);
+  transform: translateY(-2px);
+}
+
+@media screen and (min-width: 768px) {
+  .footer--nav-wrapper {
+    padding: var(--spacer-xs) 0;
+  }
 }

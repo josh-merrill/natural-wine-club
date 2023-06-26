@@ -91,7 +91,7 @@ export default function WineItem({ item }) {
                   Order
                 </button>
               ) : (
-                <button className="btn-secondary" id="card--order-btn-order">
+                <button className="btn-secondary" id="menu--item-btn-order">
                   <span onClick={() => { removeFromCart(item); handleMinus(); }}>
                     -
                   </span>

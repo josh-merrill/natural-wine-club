@@ -1,5 +1,5 @@
 import "./footer.css";
-import Top from "../top/FooterNav";
+import FooterNav from "../top/FooterNav";
 import footerLogo from "../../assets/footer-logo.svg";
 import { FiInstagram } from "react-icons/fi";
 import { FiFacebook } from "react-icons/fi";
@@ -47,9 +47,9 @@ export default function Footer() {
         <div className="footer--copyright">
           <p>&copy; NWC. All Rights Reserved.</p>
         </div>
-        
+
       </div>
-      <Top />
+      <FooterNav />
     </footer>
   );
 }

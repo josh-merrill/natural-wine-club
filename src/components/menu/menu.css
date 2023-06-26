@@ -13,7 +13,7 @@
 
 .menu--item-top {
   position: relative;
-  padding: 1em;
+  padding-top: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,7 +25,7 @@
 }
 
 .menu--item-img {
-  width: 80px;
+  width: 50px;
   transform: rotate(45deg);
 }
 
@@ -87,10 +87,12 @@
     .menu--container > h2 {
       font-size: 4.5rem;
     }
+      .menu--item-img {
+        width: 80px;
+      }
 
     .menu--btn-wrapper {
       margin: var(--spacer-sm) 0 var(--spacer-md);
-
     }
 
   }

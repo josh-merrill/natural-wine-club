@@ -8,8 +8,7 @@ export default function About() {
         <div className="about--container-top">
           <h2>What is natural wine anyway?</h2>
           <p className="about--container-text">
-          Ah, natural wine! It's like the wild child of the wine world, the rebel without a cork. Picture this: a vineyard where the grapes frolic freely, basking in the sunshine and doing their organic yoga poses. No chemicals or pesticides dare to disturb their zen vibes.</p>
-          <p className="about--container-text">When the time is ripe, these precious grapes are plucked by gentle hands, as if they were chosen for a grape beauty pageant. Then, they're fermented with native yeasts, and bottled without any additives or preservatives. The result? A wine that's as pure as the day it was born.
+          Natural wine is like the hippie rebel of the wine world, partying barefoot in vineyards, refusing to be tamed by chemicals or additives. It's the free-spirited juice that's all about embracing its wild side and giving you a taste of grape-filled liberation.
           </p>
         </div>
           <img

@@ -46,6 +46,11 @@ function ContextProvider({ children }) {
     setTotalOrderCount((prevTotalCount) => prevTotalCount - 1);
   }
 
+    function emptyCart() {
+      setCartItems([]);
+      setTotalOrderCount(0);
+    }
+
   return (
     <Context.Provider
       value={{
@@ -55,7 +60,8 @@ function ContextProvider({ children }) {
         handleCart,
         addToCart,
         removeFromCart,
-        totalOrderCount,
+        emptyCart,
+        totalOrderCount
       }}
     >
       {children}

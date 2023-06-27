@@ -89,7 +89,7 @@ export default function Cart() {
 
   return (
     <section className="cart--component-wrapper">
-      <div className="container">
+      <div className="cart--container container">
           <h2 className="cart--title">Your Cart Items</h2>
           <div
             className={`cart--item-container ${

@@ -109,9 +109,7 @@ a:hover {
 }
 
 .btn-primary:hover {
-  background-color: var(--color-blue);
   box-shadow: 0 0;
-  color: var(--color-white);
   cursor: pointer;
 }
 

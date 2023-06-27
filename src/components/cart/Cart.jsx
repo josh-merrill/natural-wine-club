@@ -1,38 +1,38 @@
-import "./cart.css";
-import { useState, useEffect, useContext } from "react";
-import { Context } from "../../context/AppContext";
+import "./cart.css"
+import { useState, useEffect, useContext } from "react"
+import { Context } from "../../context/AppContext"
 
 
 export default function Cart() {
   const { cartItems, addToCart, removeFromCart, setViewCart } =
-    useContext(Context);
+    useContext(Context)
 
-  const [isCheckingOut, setIsCheckingOut] = useState(false);
-  const [isOrderPlaced, setIsOrderPlaced] = useState(false);
+  const [isCheckingOut, setIsCheckingOut] = useState(false)
+  const [isOrderPlaced, setIsOrderPlaced] = useState(false)
 
   const totalPrice = cartItems.reduce((acc, item) => {
-    return acc + item.price * item.order_amount;
-  }, 0);
+    return acc + item.price * item.order_amount
+  }, 0)
   const totalPriceTax = (totalPrice * 0.205).toFixed(2)
   const totalPriceIncludingTax = (Number(totalPrice) + Number(totalPriceTax)).toFixed(2)
 
   useEffect(() => {
     if (isCheckingOut) {
       const timer = setTimeout(() => {
-        setIsOrderPlaced(true);
-      }, 3000);
+        setIsOrderPlaced(true)
+      }, 3000)
 
-      return () => clearTimeout(timer);
+      return () => clearTimeout(timer)
     }
-  }, [isCheckingOut]);
+  }, [isCheckingOut])
 
   function handleClose() {
-    setViewCart(false);
-    document.body.style.overflow = "auto";
+    setViewCart(false)
+    document.body.style.overflow = "auto"
   }
 
   function handleCheckout() {
-    setIsCheckingOut(true);
+    setIsCheckingOut(true)
   }
 
   const cartItemsEmpty = (
@@ -40,7 +40,7 @@ export default function Cart() {
       <h3>Your cart is empty 🍷</h3>
       <p>Add some items to your cart and come back!</p>
     </div>
-  );
+  )
 
   const cartCheckout = (
     <>
@@ -58,10 +58,10 @@ export default function Cart() {
         </div>
       )}
     </>
-  );
+  )
 
   const cartItemElements = cartItems.map((item) => {
-    const itemTotal = item.price * item.order_amount;
+    const itemTotal = item.price * item.order_amount
     return (
       <div key={item.id} className="cart--item">
         <div className="cart--item-img">
@@ -74,7 +74,7 @@ export default function Cart() {
         <div className="cart--item-amount">
           <button
             className="btn-secondary"
-            id="card--order-btn-order"
+            id="cart--item-btn-order"
 
           >
             <span
@@ -88,8 +88,8 @@ export default function Cart() {
           <h3>${itemTotal}</h3>
         </div>
       </div>
-    );
-  });
+    )
+  })
 
   return (
     <section className="cart--component-wrapper">
@@ -122,5 +122,5 @@ export default function Cart() {
         </div>
       </div>
     </section>
-  );
+  )
 }

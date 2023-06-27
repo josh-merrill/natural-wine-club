@@ -4,7 +4,7 @@ import { Context } from "../../context/AppContext"
 
 
 export default function Cart() {
-  const { cartItems, addToCart, removeFromCart, setViewCart } =
+  const { cartItems, addToCart, removeFromCart, emptyCart, setViewCart } =
     useContext(Context)
 
   const [isCheckingOut, setIsCheckingOut] = useState(false)
@@ -33,6 +33,7 @@ export default function Cart() {
 
   function handleCheckout() {
     setIsCheckingOut(true)
+    emptyCart()
   }
 
   const cartItemsEmpty = (
@@ -113,7 +114,7 @@ export default function Cart() {
           <a className="cart--nav-back bold" onClick={handleClose}>
             &#8592; Continue shopping
           </a>
-          <button className="btn-secondary" onClick={handleCheckout}
+          <button className="btn-primary" onClick={handleCheckout}
 
           disabled={cartItems.length === 0 ? true : false}>
             Checkout

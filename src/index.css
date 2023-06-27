@@ -42,7 +42,7 @@ body {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 1.125rem;
+  font-size: 1rem;
   line-height: 1.75;
   color: var(--color-blue);
   background-color: var(--color-bg);
@@ -107,7 +107,7 @@ a:hover {
   height: 46px;
   margin: 0.5em 0;
   transition-duration: 0.3s;
-  width: 100%;
+  width: 200px;
 }
 
 .btn-primary:hover {
@@ -128,7 +128,7 @@ a:hover {
   height: 51px;
   margin: 0.5em 0;
   transition-duration: 0.3s;
-  width: 200px;
+  width: 100%;
 }
 
 .btn-secondary:hover {

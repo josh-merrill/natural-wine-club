@@ -13,7 +13,7 @@
 .cart--container {
   display: flex;
   flex-direction: column;
-  height: 95vh;
+  height: 90vh;
 }
 
 .cart--title {

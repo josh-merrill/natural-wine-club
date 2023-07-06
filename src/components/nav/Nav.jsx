@@ -32,7 +32,7 @@ export default function Nav() {
     <section id="top" className="container">
       <nav className="nav--container">
         <a href="/" onClick={closeMobileMenu}>
-          <img className="nav--logo" src={logo} />
+          <img src={logo} alt="Natural Wine Club logo" className="nav--logo" />
         </a>
         <div
           className={`nav--menu ${mobileMenu && isSmallScreen ? "active" : ""}`}
@@ -55,7 +55,7 @@ export default function Nav() {
             </li>
           </ul>
         </div>
-        <div className="nav--toggle">
+        <div aria-label="Hamburger menu to expand mobile menu"className="nav--toggle">
           <Hamburger
             className="nav--toggle"
             duration={0.2}

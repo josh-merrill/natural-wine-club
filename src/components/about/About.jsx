@@ -1,6 +1,6 @@
-import "./about.css";
-import AboutImgTop from "../../assets/wine-top.jpeg";
-import AboutImgBottom from "../../assets/wine-bottom.jpeg";
+import "./about.css"
+import AboutImgTop from "../../assets/wine-top.jpg"
+import AboutImgBottom from "../../assets/wine-bottom.jpg"
 
 export default function About() {
   return (

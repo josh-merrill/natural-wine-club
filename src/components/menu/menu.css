@@ -13,7 +13,7 @@
 
 .menu--item-top {
   position: relative;
-  padding-top: 1rem;
+  padding-top: 5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -110,6 +110,10 @@
 
   .menu--container > h2 {
     font-size: 4.5rem;
+  }
+
+  .menu--item-top {
+    padding-top: 1rem;
   }
 
   .menu--item-img {

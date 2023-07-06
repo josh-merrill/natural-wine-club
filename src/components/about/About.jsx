@@ -14,14 +14,14 @@ export default function About() {
         </div>
           <img
             src={AboutImgTop}
-            alt="wine on table shown vertically"
+            alt="An image of wine on table shown vertically"
             className="about--img-top"
           />
       </div>
       <div className="about--container">
           <img
             src={AboutImgBottom}
-            alt="wine on table shown vertically"
+            alt="An image of two glasses of natural rosé wine being poured"
             className="about--img-bottom"
           />
         <div className="about--container-bottom">

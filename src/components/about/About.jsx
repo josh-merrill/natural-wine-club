@@ -1,5 +1,6 @@
 import "./about.css";
-import AboutImg from "../../assets/wine-top.jpg";
+import AboutImgTop from "../../assets/wine-top.jpeg";
+import AboutImgBottom from "../../assets/wine-bottom.jpeg";
 
 export default function About() {
   return (
@@ -12,14 +13,14 @@ export default function About() {
           </p>
         </div>
           <img
-            src={AboutImg}
+            src={AboutImgTop}
             alt="wine on table shown vertically"
             className="about--img-top"
           />
       </div>
       <div className="about--container">
           <img
-            src={AboutImg}
+            src={AboutImgBottom}
             alt="wine on table shown vertically"
             className="about--img-bottom"
           />

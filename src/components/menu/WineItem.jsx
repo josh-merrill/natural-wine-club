@@ -4,7 +4,8 @@ import "./menu.css";
 import Badge from "../badge/Badge";
 
 export default function WineItem({ item }) {
-  const { cartItems, addToCart, removeFromCart, setTotalOrderCount } = useContext(Context);
+  const { cartItems, addToCart, removeFromCart, setTotalOrderCount } =
+    useContext(Context);
 
   const cartItem = cartItems.find((cartItem) => cartItem.id === item.id);
   const initialCount = cartItem?.order_amount || 0;
@@ -16,7 +17,9 @@ export default function WineItem({ item }) {
 
   useEffect(() => {
     const menuDetailsHeight = menuDetailsRef.current?.clientHeight;
-    const lineHeight = parseInt(getComputedStyle(menuDetailsRef.current).lineHeight);
+    const lineHeight = parseInt(
+      getComputedStyle(menuDetailsRef.current).lineHeight
+    );
     const maxLines = 3;
     const maxHeight = lineHeight * maxLines;
 
@@ -61,6 +64,7 @@ export default function WineItem({ item }) {
           <div className="menu--item-basket">
             {count < 1 ? (
               <button
+                aria-label="Button to add first item to the cart"
                 className="btn-secondary"
                 onClick={() => {
                   setShow(true);
@@ -73,6 +77,7 @@ export default function WineItem({ item }) {
             ) : (
               <button className="btn-secondary" id="menu--item-btn-order">
                 <span
+                  aria-label="Button to remove an item from the cart and decrease the order amount"
                   onClick={() => {
                     removeFromCart(item);
                     handleMinus();
@@ -82,6 +87,7 @@ export default function WineItem({ item }) {
                 </span>
                 <span>{count}</span>
                 <span
+                  aria-label="Button to add another item to the cart and increase the order amount"
                   onClick={() => {
                     addToCart(item);
                     handlePlus();
@@ -94,17 +100,25 @@ export default function WineItem({ item }) {
           </div>
           <div className="menu--item-details">
             <div
-              className={`menu--item-details-text${expanded ? " expanded" : ""}`}
+              className={`menu--item-details-text${
+                expanded ? " expanded" : ""
+              }`}
               ref={menuDetailsRef}
             >
               <p>
-                <span className="bold">{item.winery}</span> &#x2022; {item.year} &#x2022;{" "}
-                <span className="bold">{item.winemaking}</span> &#x2022; {item.grape} &#x2022;{" "}
-                <span className="bold">{item.region}</span> &#x2022; {item.description}
+                <span className="bold">{item.winery}</span> &#x2022; {item.year}{" "}
+                &#x2022; <span className="bold">{item.winemaking}</span>{" "}
+                &#x2022; {item.grape} &#x2022;{" "}
+                <span className="bold">{item.region}</span> &#x2022;{" "}
+                {item.bottle_size} &#x2022; {item.description}
               </p>
             </div>
           </div>
-          <button className="btn-bold" onClick={toggleExpanded}>
+          <button
+            aria-label="View more or view less button"
+            className="btn-bold"
+            onClick={toggleExpanded}
+          >
             {expanded ? "- View less" : "+ View more"}
           </button>
         </div>

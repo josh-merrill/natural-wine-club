@@ -13,7 +13,6 @@
 
 .footer--nav-wrapper a:hover {
   color: var(--color-petnat);
-  transform: translateY(-2px);
 }
 
 @media screen and (min-width: 768px) {

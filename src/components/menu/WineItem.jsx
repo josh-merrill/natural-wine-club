@@ -100,7 +100,7 @@ export default function WineItem({ item }) {
               <p>
                 <span className="bold">{item.winery}</span> &#x2022; {item.year} &#x2022;{" "}
                 <span className="bold">{item.winemaking}</span> &#x2022; {item.grape} &#x2022;{" "}
-                <span className="bold">{item.region}</span> &#x2022; {item.description}
+                <span className="bold">{item.region}</span> &#x2022; {item.bottle_size} &#x2022; {item.description}
               </p>
             </div>
           </div>

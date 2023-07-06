@@ -47,7 +47,7 @@
   overflow: hidden;
   text-overflow: ellipsis;
   line-height: 2;
-  letter-spacing: 2px;
+  letter-spacing: 3.25px;
   max-height: 6em;
   transition: max-height 0.3s ease-in-out;
   display: -webkit-box;

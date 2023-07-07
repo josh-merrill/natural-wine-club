@@ -108,7 +108,7 @@
     grid-template-rows: repeat(4, auto);
   }
 
-  .menu--container > h2 {
+  .menu--container-title {
     font-size: 4.5rem;
   }
 

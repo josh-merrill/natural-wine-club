@@ -1,6 +1,7 @@
 import "./cart.css";
 import { useState, useEffect, useContext } from "react";
 import { Context } from "../../context/AppContext";
+import Reveal from "../../utils/Reveal";
 
 export default function Cart() {
   const { cartItems, addToCart, removeFromCart, emptyCart, setViewCart } =
@@ -89,6 +90,7 @@ export default function Cart() {
 
   return (
     <section className="cart--component-wrapper">
+      <Reveal>
       <div className="cart--container container">
           <h2 className="cart--title">Your Cart Items</h2>
           <div
@@ -123,6 +125,7 @@ export default function Cart() {
             </button>
           </div>
       </div>
+    </Reveal>
     </section>
   );
 }

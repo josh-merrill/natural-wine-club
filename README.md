@@ -22,7 +22,7 @@ Learn more about this project below 👇
   - [What I would change if I had more time](#what-i-would-change-if-i-had-more-time)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
-- 
+
 ## Project Overview
 
 ### Live Demo
@@ -32,7 +32,7 @@ Check out the live demo of the website: [naturalwineclub.co](https://naturalwine
 
 ## Screenshot
 
-![](./public/screenshot)
+![](./public/screenshot.jpg)
 
 
 ### Features

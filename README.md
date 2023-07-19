@@ -13,7 +13,7 @@ Learn more about this project below 👇
   - [Live Demo](#live-demo)
   - [Screenshot](#screenshot)
   - [Features](#features)
-  - [Built using](#built-using)
+  - [Built with](#built-with)
 - [My process](#my-process)
   - [How did I build it](#how-did-i-build-it)
   - [What problem did I set out to fix](#what-problem-did-i-set-out-to-fix)
@@ -42,7 +42,7 @@ Check out the live demo of the website: [naturalwineclub.co](https://naturalwine
 - **Checkout**: Enjoy a simulated and smooth checkout process that calculates sales tax and final purchase price.
 
  
-### Built using
+### Built with
 
 - Semantic HTML5 markup
 - CSS custom styling

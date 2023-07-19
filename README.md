@@ -13,8 +13,8 @@ Learn more about this project below 👇
   - [Live Demo](#live-demo)
   - [Screenshot](#screenshot)
   - [Features](#features)
-  - [Built with](#built-with)
-  - [My process](#my-process)
+  - [Built using](#built-using)
+- [My process](#my-process)
   - [How did I build it](#how-did-i-build-it)
   - [What problem did I set out to fix](#what-problem-did-i-set-out-to-fix)
   - [What were some of the design decisions](#what-were-some-of-the-design-decisions)
@@ -54,7 +54,7 @@ Check out the live demo of the website: [naturalwineclub.co](https://naturalwine
 - [React Hamburger](https://hamburger-react.netlify.app/) - Animated hamburger menu icons made for React
 
 
-### My process
+## My process
 
 My goal for this project was to develop a small e-commerce web application using React. Below are the tools and technologies I utilized throughout the development process:
 

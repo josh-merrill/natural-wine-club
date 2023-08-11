@@ -20,7 +20,7 @@ export default function Menu() {
 
   return (
     <Reveal>
-      <section className="menu--wrapper container">
+      <section id="menu" className="menu--wrapper container">
         {viewCart && <Cart />}
         <div className="menu--container">
           <Reveal>

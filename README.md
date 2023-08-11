@@ -14,7 +14,7 @@ Learn more about this project below 👇
   - [Screenshot](#screenshot)
   - [Features](#features)
   - [Built with](#built-with)
-  - [My process](#my-process)
+- [My process](#my-process)
   - [How did I build it](#how-did-i-build-it)
   - [What problem did I set out to fix](#what-problem-did-i-set-out-to-fix)
   - [What were some of the design decisions](#what-were-some-of-the-design-decisions)
@@ -30,7 +30,7 @@ Learn more about this project below 👇
 Check out the live demo of the website: [naturalwineclub.co](https://naturalwineclub.co/)
 
 
-## Screenshot
+### Screenshot
 
 ![](./public/screenshot.jpg)
 
@@ -54,7 +54,7 @@ Check out the live demo of the website: [naturalwineclub.co](https://naturalwine
 - [React Hamburger](https://hamburger-react.netlify.app/) - Animated hamburger menu icons made for React
 
 
-### My process
+## My process
 
 My goal for this project was to develop a small e-commerce web application using React. Below are the tools and technologies I utilized throughout the development process:
 
@@ -79,7 +79,7 @@ The purpose of the project was to simulate an experience that is simple, and use
 
 This project was inspired by a natural wine shop’s menu I came across while traveling throughout Portugal. I loved the layout and the simple, yet clean look of the design. The illustrations were created by my partner and talented designer, Hailey Coral, while the icons came from the React-Icons npm package.
 
-As far as user experience, I wanted to create a design that was simple and not overly complex. One particular design decision was to include a cart option beneath the menu so that user’s had quicker access to the “view cart” option, and provide users with the ability to “View more” information about each wine on their individual product cards using conditional rendering.
+As far as user experience, I wanted to create a design that was simple and not overly complex. One particular design decision was to include a cart option beneath the menu so that users had quicker access to the “view cart” option and provide users with the ability to “View more” information about each wine on their individual product cards using conditional rendering.
 
 ### What I learned
 
@@ -169,7 +169,6 @@ export default function Menu() {
 
 By doing so, I eliminated the need to pass props down multiple levels between these components, resulting in more organized and easily maintainable code.
 
-
 **Conclusion**
 
 Through this project, I deepened my understanding of state management with the Context API, enabling seamless communication between the `WineItem`, `Menu` and `Cart` components. As a result, I created a more streamlined and enjoyable user experience for visitors to the Natural Wine Club E-commerce Website.
@@ -182,9 +181,12 @@ In the future, I would like to the Natural Wine Club by incorporating a database
 
 ## Author
 
-- Website - [Josh Merrill Portfolio](https://www.josh-merrill.com)
-- Github - [Github Profile](https://github.com/josh-merrill)
-- LinkedIn - [LinkedIn Profile](https://www.linkedin.com/in/joshmmerrill/)
+**Joshua Merrill**
+
+- [Portfolio](https://www.josh-merrill.com)
+- [Github](https://github.com/josh-merrill)
+- [LinkedIn](https://www.linkedin.com/in/joshmmerrill/)
+- [Email](mailto:joshmmerrill@outlook.com?subject=Hello!)
 
 
 ## Acknowledgments
